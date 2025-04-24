@@ -1,24 +1,50 @@
-# README
+# Ruby on Rails Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This Ruby on Rails application allows you to generate and download reports in PDF format.
 
-Things you may want to cover:
+## Prerequisites
 
-* Ruby version
+Ensure you have the following installed:
 
-* System dependencies
+- **Ruby**: 3.2.2 (recommended)
+- **Rails**: 7.0.x
+- **Bundler**: Latest version
+- **wkhtmltopdf**: Required for PDF generation ([installation instructions](#wkhtmltopdf-installation))
 
-* Configuration
 
-* Database creation
+## Installation
 
-* Database initialization
+### Step 1: Clone the Repository
 
-* How to run the test suite
+Clone the repository to your local machine:
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+git clone https://github.com/2022boussaidi/Rails-PDF-Report-Generator.git
+cd your-repository
 
-* Deployment instructions
+### Step 2: Install the required Ruby gems using Bundler
 
-* ...
+```bash
+
+bundle install
+
+### Step 3: Run the application
+start the Rails development server
+```bash
+rails server
+
+
+Once the server is running, you can access the application via:
+View Report (HTML): Navigate to http://localhost:3000/report
+
+Download Report (PDF): Navigate to http://localhost:3000/report.pdf
+
+Endpoints
+/report: Displays the generated report in HTML format.
+
+/report.pdf: Downloads the generated report in PDF format.
+
+
+
+
+
